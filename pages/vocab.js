@@ -21,8 +21,12 @@ const showVocab = (array) => {
     <div class="card-body">
       <blockquote class="blockquote mb-0">
         <p>${item.description}</p>
-        <footer class="blockquote-footer">${item.language} <cite title="Source Title">${item.time}</cite></footer>
+        <footer class="blockquote-footer">${item.language} <cite title="Source Title"></cite></footer>
       </blockquote>
+      <i class="btn btn-success fas fa-eye"
+      id="edit-vocab-btn--${item.firebaseKey}"></i>
+      <i id="delete-vocab-btn--${item.firebaseKey}"
+      class="btn btn-danger fas fa-trash-alt"></i>
     </div>
   </div>`;
   });
