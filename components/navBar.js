@@ -13,20 +13,18 @@ const navBar = () => {
         <a class="nav-link" href="#" id="all-vocab">ALL CARDS<span class="sr-only">(current)</span>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" id="submit-vocab">NEW ENTRY</a>
+      <li class="nav-item active">
+      <a class="nav-link" href="#" id="javascript-btn">JAVASCRIPT<span class="sr-only">(current)
+      </span>
+      </a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          LANGUAGES
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">JavaScript</a>
-          <a class="dropdown-item" href="#">Python</a>
-          <a class="dropdown-item" href="#">C#</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+      <li class="nav-item active">
+      <a class="nav-link" href="#" id="python-btn">PYTHON<span class="sr-only">(current)</span>
+      </a>
+      </li>
+      <li class="nav-item active">
+      <a class="nav-link" href="#" id="c-sharp-btn">C#<span class="sr-only">(current)</span>
+      </a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
