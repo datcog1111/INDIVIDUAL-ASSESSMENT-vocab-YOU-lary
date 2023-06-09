@@ -39,6 +39,21 @@ const domEvents = (user) => {
     if (e.target.id === 'HTML') {
       getHTML(user.uid).then(showVocab);
     }
+
+    if (e.target.id.includes('alphabet')) {
+      getVocab(user.uid).then((data) => {
+        const sort = data.sort((y, z) => {
+          if (y.title > z.title) {
+            return 1;
+          }
+          if (y.title < z.title) {
+            return -1;
+          }
+          return 0;
+        });
+        showVocab(sort);
+      });
+    }
   });
 };
 

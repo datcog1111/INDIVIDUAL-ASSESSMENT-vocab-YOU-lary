@@ -44,6 +44,7 @@ module.exports = {
       },
       {
         test: /\.(woff|ttf|eot|svg)(\?v=[a-z0-9]\.[a-z0-9]\.[a-z0-9])?$/,
+        type: 'asset/resource',
         use: [
           {
             loader: 'file-loader',

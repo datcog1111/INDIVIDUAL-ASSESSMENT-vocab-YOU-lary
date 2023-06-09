@@ -28,6 +28,14 @@ const navBar = () => {
       <a class="nav-link" href="#" id="HTML">HTML<span class="sr-only">(current)</span>
       </a>
       </li>
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      SORT</a>
+      <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#" id="alphabet">ALPHABETICAL</a></li>
+      <li><a class="dropdown-item" href="#" id="new">NEWEST</a></li>
+      <li><a class="dropdown-item" href="#" id="old">OLDEST</a></li></ul>
+      </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
