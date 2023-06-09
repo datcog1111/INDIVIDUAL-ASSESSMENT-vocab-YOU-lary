@@ -1,7 +1,9 @@
-import { getSingleVocab, deleteVocab, getVocab } from '../api/vocabData';
+import {
+  getSingleVocab, deleteVocab, getVocab, getJavascript, getCSS, getHTML
+} from '../../api/vocabData';
 // import { showVocab } from '../pages/vocab';
-import addVocabForm from './addVocabForm';
-import { showVocab } from '../pages/vocab';
+import addVocabForm from '../forms/addVocabForm';
+import { showVocab } from '../../pages/vocab';
 
 const domEvents = (user) => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
@@ -20,10 +22,22 @@ const domEvents = (user) => {
       addVocabForm({}, user);
     }
 
-    if (e.target.id.includes('edit-vocab-btn')) {
+    if (e.target.id.includes('edit-vocab')) {
       const [, firebaseKey] = e.target.id.split('--');
 
       getSingleVocab(firebaseKey).then((vocabObj) => addVocabForm(vocabObj, user));
+    }
+
+    if (e.target.id === 'javascript') {
+      getJavascript(user.uid).then(showVocab);
+    }
+
+    if (e.target.id === 'CSS') {
+      getCSS(user.uid).then(showVocab);
+    }
+
+    if (e.target.id === 'HTML') {
+      getHTML(user.uid).then(showVocab);
     }
   });
 };

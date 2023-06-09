@@ -2,6 +2,8 @@ import renderToDOM from '../utils/renderToDOM';
 
 const domBuilder = () => {
   const domString = `
+  <h1 id="logo">CRUNCH TIME</h1>
+  <div id="logo"></div>
   <div id="navigation"></div>
   <div id="main-container">
   <div id="add-button"></div>

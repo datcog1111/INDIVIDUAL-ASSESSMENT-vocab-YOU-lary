@@ -1,5 +1,6 @@
-import { createVocab, getVocab, updateVocab } from '../api/vocabData';
-import { showVocab } from '../pages/vocab';
+import { createVocab, getVocab, updateVocab } from '../../api/vocabData';
+import { showVocab } from '../../pages/vocab';
+import timeStamp from '../forms/timeStamp';
 
 const formEvents = (user) => {
   document.querySelector('#main-container').addEventListener('submit', (e) => {
@@ -8,7 +9,8 @@ const formEvents = (user) => {
       const payload = {
         title: document.querySelector('#title').value,
         description: document.querySelector('#description').value,
-        language: document.querySelector('#select-language').value,
+        language: document.querySelector('#language').value,
+        time: timeStamp,
         uid: user.uid
       };
 
@@ -26,8 +28,9 @@ const formEvents = (user) => {
       const payload = {
         title: document.querySelector('#title').value,
         description: document.querySelector('#description').value,
-        language: document.querySelector('#select-language').value,
-        firebaseKey
+        language: document.querySelector('#language').value,
+        firebaseKey,
+        time: `${Date.now()}`
       };
 
       updateVocab(payload).then(() => {

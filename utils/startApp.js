@@ -3,9 +3,9 @@ import navBar from '../components/navBar';
 import domBuilder from '../components/domBuilder';
 import { getVocab } from '../api/vocabData';
 import { showVocab } from '../pages/vocab';
-import navigationEvents from '../components/navigationEvents';
-import domEvents from '../components/domEvents';
-import formEvents from '../components/formEvents';
+import navigationEvents from '../components/events/navigationEvents';
+import domEvents from '../components/events/domEvents';
+import formEvents from '../components/events/formEvents';
 
 const startApp = (user) => {
   domBuilder();
