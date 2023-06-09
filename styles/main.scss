@@ -1,10 +1,23 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 @import "~bootstrap/scss/bootstrap";
 
+@font-face {
+  src: url('./Countdown\ Regular.otf') format('otf');
+  font-family: 'Countdown';
+  
+}
+
 
 body {
+  background-image: url('https://cdn.shopifycdn.net/s/files/1/0598/3263/1453/files/star-background-gif-_no-shooting-star.gif?v=1668992315');
   background-color: antiquewhite;
   color: brown;
   text-align: center;
   margin-top: 100px;
+}
+
+
+#logo {
+  font-family: 'Countdown';
+  color: #cc5500;
 }

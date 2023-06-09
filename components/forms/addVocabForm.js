@@ -1,5 +1,5 @@
-import clearDom from '../utils/clearDom';
-import renderToDOM from '../utils/renderToDOM';
+import clearDom from '../../utils/clearDom';
+import renderToDOM from '../../utils/renderToDOM';
 
 const addVocabForm = (obj = {}) => {
   clearDom();
@@ -12,15 +12,18 @@ const addVocabForm = (obj = {}) => {
   <label for="description">Description</label>
   <textarea class="form-control" placeholder="Vocabulary Description" id="description" style="height: 100px">${obj.description || ''}</textarea>
   </div>
-  <div class="form-group" id="select-language">
-  </div>
+ <select class="form-select" id="language" aria-label="Default select example">
+ <option selected>LANGUAGE</option>
+ <option value="JavaScript">JAVASCRIPT</option>
+ <option value="CSS">CSS</option>
+ <option value="HTML">HTML</option>
+ </select>
   <button type="submit" class="btn btn-primary">Submit Entry
   </button>
   </div>
   </form>`;
 
   renderToDOM('#form-container', domString);
-  // selectLanguage(`${obj.language} || ''`, user);
 };
 
 export default addVocabForm;
