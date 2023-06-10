@@ -30,7 +30,7 @@ const formEvents = (user) => {
         description: document.querySelector('#description').value,
         language: document.querySelector('#language').value,
         firebaseKey,
-        time: `${Date.now()}`
+        time: timeStamp
       };
 
       updateVocab(payload).then(() => {
