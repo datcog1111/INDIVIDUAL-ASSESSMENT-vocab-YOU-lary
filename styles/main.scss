@@ -42,7 +42,7 @@ body {
 }
 
 .card {
-  font-family:'Countdown', bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display:flex;
   justify-content:space-between;
   margin:20px;
@@ -66,4 +66,9 @@ body {
 
 #submit-btn {
   font-family: 'Countdown', bold;
+}
+
+#header {
+  border:black 2px solid;
+
 }

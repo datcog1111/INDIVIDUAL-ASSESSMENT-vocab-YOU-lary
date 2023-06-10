@@ -11,7 +11,7 @@ const showVocab = (array) => {
   let domString = '';
   array.forEach((item) => {
     domString += `<div class="card">
-    <div class="card-header">
+    <div class="card-header" id="header">
       ${item.title}
     </div>
     <div class="card-body">

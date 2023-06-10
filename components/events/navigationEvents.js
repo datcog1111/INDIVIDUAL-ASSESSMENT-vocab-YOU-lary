@@ -28,7 +28,7 @@ const navigationEvents = (user) => {
   document.querySelector('#alphabet').addEventListener('click', () => {
     sortAlphabet(user.uid).then(showVocab);
   });
-  document.querySelector('new').addEventListener('click', () => {
+  document.querySelector('#new').addEventListener('click', () => {
     sortNewest(user.uid).then(showVocab);
   });
 

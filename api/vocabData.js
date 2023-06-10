@@ -144,7 +144,7 @@ const sortNewest = (uid) => new Promise((resolve, reject) => {
     .then((response) => response.json())
     .then((data) => {
       const newest = Object.values(data).sort((a, b) => {
-        if (a.timestamp < b.timestamp) return -1;
+        if (a.time < b.time) return -1;
         return 0;
       });
       resolve(newest);
@@ -162,7 +162,7 @@ const sortOldest = (uid) => new Promise((resolve, reject) => {
     .then((response) => response.json())
     .then((data) => {
       const oldest = Object.values(data).sort((a, b) => {
-        if (a.timestamp > b.timestamp) return -1;
+        if (a.time > b.time) return -1;
         return 0;
       });
       resolve(oldest);

@@ -8,7 +8,7 @@ const searchVocab = (user) => {
     const searchEvent = e.target.value.toLowerCase();
     let result;
     getVocab(user.uid).then((data) => {
-      result = data.filter((item) => item.title.toLowerCase().includes(searchEvent) || item.description.toLowerCase().includes(searchEvent) || item.description.toLowerCase().includes(searchEvent));
+      result = data.filter((item) => item.title.toLowerCase().includes(searchEvent) || item.description.toLowerCase().includes(searchEvent) || item.language.toLowerCase().includes(searchEvent));
 
       showVocab(result);
     });
