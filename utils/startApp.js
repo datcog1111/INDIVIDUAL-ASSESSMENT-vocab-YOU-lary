@@ -9,9 +9,9 @@ import formEvents from '../components/events/formEvents';
 import searchVocab from '../components/events/search';
 
 const startApp = (user) => {
-  domBuilder();
+  domBuilder(user);
   logoutButton();
-  navBar();
+  navBar(user);
   navigationEvents(user);
   domEvents(user);
   formEvents(user);
