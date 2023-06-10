@@ -10,7 +10,7 @@ import searchVocab from '../components/events/search';
 
 const startApp = (user) => {
   domBuilder();
-  logoutButton(user);
+  logoutButton();
   navBar();
   navigationEvents(user);
   domEvents(user);

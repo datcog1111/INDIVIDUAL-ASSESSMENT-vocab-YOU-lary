@@ -1,4 +1,4 @@
-// import { signOut } from '../utils/auth';
+import { signOut } from '../../utils/auth';
 import { showVocab } from '../../pages/vocab';
 import {
   getVocab, getJavascript, getCSS, getHTML, sortAlphabet, sortNewest, sortOldest
@@ -6,6 +6,8 @@ import {
 import addVocabForm from '../forms/addVocabForm';
 
 const navigationEvents = (user) => {
+  document.querySelector('#logoutBtn').addEventListener('click', signOut);
+
   document.querySelector('#all-vocab').addEventListener('click', () => {
     getVocab(user.uid).then(showVocab);
   });
