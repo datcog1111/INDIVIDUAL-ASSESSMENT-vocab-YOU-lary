@@ -115,6 +115,61 @@ const getCSS = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const sortAlphabet = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/cards.json?orderBy="uid"&equalTo="${uid}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const alphabet = Object.values(data).sort((a, b) => {
+        if (a.title.toLowerCase() < b.title.toLowerCase()) return -1;
+        if (a.title.toLowerCase() > b.title.toLowerCase()) return 1;
+        return 0;
+      });
+      resolve(alphabet);
+    })
+    .catch(reject);
+});
+
+const sortNewest = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/cards.json?orderBy="uid"&equalTo="${uid}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const newest = Object.values(data).sort((a, b) => {
+        if (a.timestamp < b.timestamp) return -1;
+        return 0;
+      });
+      resolve(newest);
+    })
+    .catch(reject);
+});
+
+const sortOldest = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/cards.json?orderBy="uid"&equalTo="${uid}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const oldest = Object.values(data).sort((a, b) => {
+        if (a.timestamp > b.timestamp) return -1;
+        return 0;
+      });
+      resolve(oldest);
+    })
+    .catch(reject);
+});
+
 export {
-  getVocab, createVocab, updateVocab, getSingleVocab, deleteVocab, getJavascript, getHTML, getCSS
+  getVocab, createVocab, updateVocab, getSingleVocab, deleteVocab, getJavascript, getHTML, getCSS, sortAlphabet, sortNewest, sortOldest
 };

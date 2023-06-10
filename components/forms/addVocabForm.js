@@ -18,7 +18,7 @@ const addVocabForm = (obj = {}) => {
  <option value="CSS">CSS</option>
  <option value="HTML">HTML</option>
  </select>
-  <button type="submit" class="btn btn-primary">Submit Entry
+  <button type="submit" class="btn btn-dark" id="submit-btn">Submit Entry
   </button>
   </div>
   </form>`;

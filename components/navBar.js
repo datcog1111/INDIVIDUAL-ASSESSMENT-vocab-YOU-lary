@@ -7,7 +7,7 @@ const navBar = () => {
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" id="navbar-items">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#" id="all-vocab">ALL CARDS<span class="sr-only">(current)</span>
@@ -16,7 +16,7 @@ const navBar = () => {
       <li class="nav-item active">
       <a class="nav-link" href="#" id="create-vocab">CREATE ENTRY</a></li>
       <li class="nav-item active">
-      <a class="nav-link" href="#" id="javascript">JAVASCRIPT<span class="sr-only">(current)
+      <a class="nav-link" href="#" id="javascript">JS<span class="sr-only">(current)
       </span>
       </a>
       </li>
@@ -38,7 +38,7 @@ const navBar = () => {
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>

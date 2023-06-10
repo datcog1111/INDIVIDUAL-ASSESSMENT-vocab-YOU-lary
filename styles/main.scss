@@ -19,5 +19,51 @@ body {
 
 #logo {
   font-family: 'Countdown';
+  color: #FFD580;
+}
+
+#navbar-logo {
+  font-family: 'Countdown';
+  color:darkorange;
+}
+
+#navbar-items {
+  font-family: 'Countdown';
   color: #cc5500;
+  font-size: x-large !important;
+}
+
+#main-container {
+  display:flex;
+  flex-direction:column;
+  margin-top:20px;
+  justify-content: center;
+  margin-left:200px;
+}
+
+.card {
+  font-family:'Countdown', bold;
+  display:flex;
+  justify-content:space-between;
+  margin:20px;
+  font-size:large;
+  border: 2px solid #cc5500;
+  max-width:400px;
+}
+
+#title {
+  font-family: 'Countdown', bold;
+  color:black;
+}
+
+#description {
+  font-family: 'Countdown', bold;
+}
+
+#language {
+  font-family: 'Countdown', bold;
+}
+
+#submit-btn {
+  font-family: 'Countdown', bold;
 }
