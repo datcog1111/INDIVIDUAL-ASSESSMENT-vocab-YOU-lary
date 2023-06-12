@@ -33,8 +33,8 @@ const navBar = () => {
       SORT</a>
       <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="#" id="alphabet">ALPHABETICAL</a></li>
-      <li><a class="dropdown-item" href="#" id="new">NEWEST</a></li>
-      <li><a class="dropdown-item" href="#" id="old">OLDEST</a></li></ul>
+      <li><a class="dropdown-item" href="#" id="new">OLDEST</a></li>
+      <li><a class="dropdown-item" href="#" id="old">NEWEST</a></li></ul>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">

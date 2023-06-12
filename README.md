@@ -1,9 +1,34 @@
-Welcome to Crunch Time!
-A user friendly app designed to store and update vocabulary word cards. There is an option to filter through cards by langauge, as well as a sort option to organize your cards by date or alphabetically. 
- 1.Upon starting the app the user is greeted by a google login button which allows the user to login with their Google email. 
+CRUNCH TIME
 
-2.After logging in, the user will see a home page with a navigation bar. 
+ ## overview of the project
+ Crunch Time vocabulary allows the user to create vocabulary cards within 3 categories (Javascript, CSS, and HTML), update and delete their cards, and filter/sort through cards. 
 
-3. The navigation bar contains a button to view all vocabulary, a button to create a new vocabulary entry, buttons to filter the cards by JavaScript, CSS, and HTML, a sort dropdown, and a search bar. 
+ ## link to deployed project
+ <https://vocabyoulary-ht.netlify.app/#>
 
-4. When the user clicks "create entry", a form appears on the screen. There is an input for 
+ ## link to wireframe
+
+ <https://www.figma.com/file/WKbMk4jTZD08TurGgdi7zY/Crunch-time?type=design&node-id=0-1&t=neWNDQWRGA8jqJkI-0>
+
+ ## link to dbdiagram
+
+ <https://dbdiagram.io/d/64655f04dca9fb07c44958b7>
+
+ ## description of the user
+ Any user interested in catologing their code vocabulary. 
+
+ ## list of features
+ * User can create new vocabulary cards, and select the language.
+ * User can filter through cards by dev language.
+ * User can sort their cards Alphabetically and by date. 
+ * User can update information on cards.
+ * User can delete cards they have created. 
+ * User can search vocabulary cards dynamically. 
+
+ ## LOOM video walkthrough
+
+ <https://www.loom.com/share/eb77f660a4494d6796d516258950c7f5>
+
+ ## contributors 
+
+ datcog1111
